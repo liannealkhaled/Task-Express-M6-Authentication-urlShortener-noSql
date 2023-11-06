@@ -10,8 +10,8 @@ connectDb();
 
 app.use(express.json());
 
-app.use("/urls", urlRoutes);
-app.use(userRoutes);
+app.use("/api/urls", urlRoutes);
+app.use("/api", userRoutes);
 
 app.use(notFoundHandler);
 app.use(errorHandler);
